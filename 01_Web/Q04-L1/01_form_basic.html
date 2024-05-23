@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title 태그 -->
+    <title>TITLE</title>
+  </head>
+  <body>
+    <!-- 회원 가입 폼 -->
+    <form>
+      <!-- 정보 입력을 위한 테이블 -->
+      <table>
+        <tr>
+          <!-- 첫 번째 행 -->
+          <td><label for="username">이름</label></td>
+          <td><input id="username" type="text" name="username" /></td>
+        </tr>
+        <tr>
+          <!-- 두 번째 행 -->
+          <td>성별</td>
+          <td>
+            <!-- 남자 선택 라디오 버튼 -->
+            <input id="man" type="radio" name="gender" value="m" />
+            <label for="man">남자</label>
+            <!-- 여자 선택 라디오 버튼 -->
+            <input id="woman" type="radio" name="gender" value="w" />
+            <label for="woman">여자</label>
+          </td>
+        </tr>
+      </table>
+      <!-- 가입 버튼 -->
+      <input type="submit" value="가입" />
+    </form>
+  </body>
+</html>
