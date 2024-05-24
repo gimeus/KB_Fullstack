@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title 태그 -->
+    <title>TITLE</title>
+  </head>
+  <body>
+    <!-- form 태그: 사용자가 입력할 수 있는 폼 정의 -->
+    <form>
+      <!-- fieldset 태그: 폼 요소 그룹화 -->
+      <fieldset>
+        <!-- legend 태그: fieldset의 제목 정의 -->
+        <legend>로그인</legend>
+        <!-- table 태그: 폼 레이블, 입력 필드 정렬 -->
+        <table>
+          <tr>
+            <!-- 첫 번째 행: 사용자 ID 레이블, 입력 필드 -->
+            <!-- for 속성은 label이 가리키는 입력 필드의 id와 일치해야 함 -->
+            <td><label for="userid">사용자 ID</label></td>
+            <!-- 입력 필드: 사용자 ID를 입력받음, name 속성은 전송되는 데이터의 키 정의 -->
+            <td><input id="userid" name="userid" type="text" /></td>
+          </tr>
+          <tr>
+            <!-- 두 번째 행: 비밀번호 레이블, 입력 필드 -->
+            <!-- for 속성은 label이 가리키는 입력 필드의 id와 일치해야 함 -->
+            <td><label for="password">비밀번호</label></td>
+            <!-- 입력 필드: 비밀번호를 입력받음, type="password"는 입력된 텍스트 숨김 -->
+            <td><input id="password" name="password" type="password" /></td>
+          </tr>
+        </table>
+        <!-- 제출 버튼: 폼 데이터를 서버로 전송 -->
+        <input type="submit" value="확인" />
+        <!-- 리셋 버튼: 폼 필드 초기화 -->
+        <input type="reset" value="다시쓰기" />
+      </fieldset>
+    </form>
+  </body>
+</html>
